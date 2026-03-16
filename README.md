@@ -131,7 +131,7 @@ TF-IDF (sublinear TF, smooth IDF) via Orange's Bag of Words widget.
 
 Fake news is **personality-driven**. True news is **institution-driven**. Both cover the same political period through fundamentally different lenses.
 
-!\[Word Clouds](screenshots/wordcloud\_fake.png)
+!\[Word Clouds](https://github.com/PhilipKatema/Fake_News_Detection/blob/main/screenshots/wordcloud_fake.png)
 
 ### 2 · Topic Modeling
 

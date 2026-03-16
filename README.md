@@ -73,7 +73,7 @@ The 2016 U.S. presidential election brought fake news into mainstream political 
 * **Period:** 2016–2018 U.S. election cycle
 * **Fields:** `title`, `text`, `subject`, `date`, `label`
 
-See [`data/README.md`](data/README.md) for full dataset description and preparation steps.
+See [`data/README.md`](https://github.com/PhilipKatema/Fake_News_Detection/blob/main/data/README.md) for full dataset description and preparation steps.
 
 \---
 
@@ -81,7 +81,7 @@ See [`data/README.md`](data/README.md) for full dataset description and preparat
 
 **Orange 3.39** with the **Text Mining add-on**
 
-All analysis was performed using Orange's visual workflow canvas — no scripting required. The workflow is fully reproducible by following the [`docs/workflow\_guide.docx`](docs/workflow_guide.docx).
+All analysis was performed using Orange's visual workflow canvas — no scripting required. The workflow is fully reproducible by following the [`docs/workflow\_guide.docx`](https://github.com/PhilipKatema/Fake_News_Detection/blob/main/docs/workflow_guide.docx).
 
 \---
 
@@ -145,7 +145,7 @@ Fake news is **personality-driven**. True news is **institution-driven**. Both c
 |Media Criticism \& Cultural Commentary|4,040|**5,287**|0.76×|
 |Election Integrity \& Legislative Controversy|3,124|3,576|0.87×|
 
-Election-era fake news was built around packaging viral social media content as news, not reporting primary-source events.
+Election-era fake news was built around packaging viral social media content as news rather than reporting primary-source events.
 
 !\[Topics Distribution](screenshots/topics\_distribution.png)
 
@@ -197,9 +197,8 @@ Fake news shows emotional amplification in **both** directions — not simply ne
 
 |File|Description|
 |-|-|
-|[`docs/business\_justification.docx`](docs/business_justification.docx)|Problem statement, dataset rationale, tool justification, future applications|
-|[`docs/project\_report.docx`](docs/project_report.docx)|Full academic report — all findings, methodology, and lessons learned|
-|[`docs/workflow\_guide.docx`](docs/workflow_guide.docx)|Step-by-step Orange 3.39 node configuration guide (fully replicable)|
+|[`docs/project\_report.docx`](https://github.com/PhilipKatema/Fake_News_Detection/blob/main/docs/workflow_guide.docx)|Full academic report — all findings, methodology, and lessons learned|
+|[`docs/workflow\_guide.docx`]([docs/workflow_guide.docx](https://github.com/PhilipKatema/Fake_News_Detection/blob/main/docs/workflow_guide.docx))|Step-by-step Orange 3.39 node configuration guide (fully replicable)|
 
 \---
 
@@ -209,9 +208,9 @@ Fake news shows emotional amplification in **both** directions — not simply ne
 2. Add a `label` column: `True` for all rows in True.csv, `Fake` for all rows in Fake.csv
 3. Merge into `fake\_news\_combined.csv`
 4. Install [Orange 3.39](https://orangedatamining.com/) and the Text Mining add-on
-5. Follow [`docs/workflow\_guide.docx`](docs/workflow_guide.docx) to build the workflow node by node
+5. Follow [`docs/workflow\_guide.docx`](https://github.com/PhilipKatema/Fake_News_Detection/blob/main/docs/workflow_guide.docx) to build the workflow node by node
 
-See [`workflow/README.md`](workflow/README.md) for detailed setup instructions.
+See [`workflow/README.md`](https://github.com/PhilipKatema/Fake_News_Detection/blob/main/workflow/README.md) for detailed setup instructions.
 
 \---
 

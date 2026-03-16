@@ -131,7 +131,6 @@ TF-IDF (sublinear TF, smooth IDF) via Orange's Bag of Words widget.
 
 Fake news is **personality-driven**. True news is **institution-driven**. Both cover the same political period through fundamentally different lenses.
 
-!\[Word Clouds](https://github.com/PhilipKatema/Fake_News_Detection/blob/main/screenshots/wordcloud_fake.png)
 
 ### 2 · Topic Modeling
 
@@ -147,7 +146,6 @@ Fake news is **personality-driven**. True news is **institution-driven**. Both c
 
 Election-era fake news was built around packaging viral social media content as news rather than reporting primary-source events.
 
-!\[Topics Distribution](screenshots/topics\_distribution.png)
 
 ### 3 · Sentiment Analysis (VADER)
 
@@ -159,13 +157,10 @@ Election-era fake news was built around packaging viral social media content as 
 
 Fake news shows emotional amplification in **both** directions — not simply negativity bias. Designed to provoke, not inform.
 
-!\[Sentiment Distribution](screenshots/sentiment\_distribution.png)
-
 ### 4 · Predictive Classification
 
 4 of 5 classifiers exceeded AUC 0.91, confirming that vocabulary patterns alone are sufficient for automated detection at meaningful real-world reliability.
 
-!\[Predictive Results](screenshots/predictive\_results.png)
 
 \---
 

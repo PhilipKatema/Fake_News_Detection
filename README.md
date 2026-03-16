@@ -1,4 +1,4 @@
-# 🗞️ Fake News Detection — 2016–2018 U.S. Election Cycle
+# 🗞️ Fake News Detection - 2016–2018 U.S. Election Cycle
 
 > A complete text mining pipeline analyzing 44,867 labeled political news articles using topic modeling, sentiment analysis, word frequency visualization, and supervised machine learning classification.
 > Built entirely in \*\*Orange 3.39\*\* (no code required).
@@ -14,9 +14,9 @@
 |Neural Network|0.917|84.1%|0.841|
 |Naive Bayes|0.914|83.4%|0.834|
 |kNN|0.838|76.7%|0.766|
-|SVM *(misconfigured — see lessons learned)*|0.635|53.6%|0.434|
+|SVM *(misconfigured - see lessons learned)*|0.635|53.6%|0.434|
 
-**Fake news carried 45% more negative sentiment** than true news, and scored nearly **2× higher** on the "Social Media \& Viral Political Content" topic — the computational signature of election-era misinformation.
+**Fake news carried 45% more negative sentiment** than true news, and scored nearly **2× higher** on the "Social Media \& Viral Political Content" topic - the computational signature of election-era misinformation.
 
 \---
 
@@ -38,8 +38,8 @@ fake-news-detection/
 │
 ├── screenshots/
 │   ├── workflow.png                  ← Complete Orange canvas
-│   ├── wordcloud\_fake.png            ← Top vocabulary — Fake news
-│   ├── wordcloud\_true.png            ← Top vocabulary — True news
+│   ├── wordcloud\_fake.png            ← Top vocabulary - Fake news
+│   ├── wordcloud\_true.png            ← Top vocabulary - True news
 │   ├── topics\_distribution.png       ← LDA topic sums by class
 │   ├── sentiment\_distribution.png    ← VADER scores by class
 │   └── predictive\_results.png        ← Test and Score classifier comparison
@@ -55,7 +55,7 @@ fake-news-detection/
 
 ## 🧠 Project Overview
 
-The 2016 U.S. presidential election brought fake news into mainstream political consciousness. Fabricated stories spread six times faster than real news on social media, reached millions of voters, and were designed to exploit emotional triggers rather than inform. This project investigates whether text mining techniques — applied to a labeled corpus of election-era news — can identify the linguistic, topical, and emotional patterns that make misinformation detectable.
+The 2016 U.S. presidential election brought fake news into mainstream political consciousness. Fabricated stories spread six times faster than real news on social media, reached millions of voters, and were designed to exploit emotional triggers rather than inform. This project investigates whether text mining techniques - applied to a labeled corpus of election-era news - can identify the linguistic, topical, and emotional patterns that make misinformation detectable.
 
 ### Business Questions Addressed
 
@@ -68,8 +68,8 @@ The 2016 U.S. presidential election brought fake news into mainstream political 
 ## 📁 The Data
 
 * **Dataset:** True and Fake News Sample
-* **Source:** [Kaggle — Fake and Real News Dataset](https://www.kaggle.com/datasets/clmentbisaillon/fake-and-real-news-dataset) (Clément Bisaillon)
-* **Size:** 44,867 articles — 21,417 True, 23,450 Fake (perfectly balanced)
+* **Source:** [Kaggle - Fake and Real News Dataset](https://www.kaggle.com/datasets/clmentbisaillon/fake-and-real-news-dataset) (Clément Bisaillon)
+* **Size:** 44,867 articles - 21,417 True, 23,450 Fake (perfectly balanced)
 * **Period:** 2016–2018 U.S. election cycle
 * **Fields:** `title`, `text`, `subject`, `date`, `label`
 
@@ -81,7 +81,7 @@ See [`data/README.md`](https://github.com/PhilipKatema/Fake_News_Detection/blob/
 
 **Orange 3.39** with the **Text Mining add-on**
 
-All analysis was performed using Orange's visual workflow canvas — no scripting required. The workflow is fully reproducible by following the [`docs/workflow\_guide.docx`](https://github.com/PhilipKatema/Fake_News_Detection/blob/main/docs/workflow_guide.docx).
+All analysis was performed using Orange's visual workflow canvas - no scripting required. The workflow is fully reproducible by following the [`docs/workflow\_guide.docx`](https://github.com/PhilipKatema/Fake_News_Detection/blob/main/docs/workflow_guide.docx).
 
 \---
 
@@ -155,7 +155,7 @@ Election-era fake news was built around packaging viral social media content as 
 |**Negative**|**3,671**|**2,531**|**+45%**|
 |Neutral|17,785|17,183|+3%|
 
-Fake news shows emotional amplification in **both** directions — not simply negativity bias. Designed to provoke, not inform.
+Fake news shows emotional amplification in **both** directions - not simply negativity bias. Designed to provoke, not inform.
 
 ### 4 · Predictive Classification
 
@@ -174,8 +174,8 @@ Fake news shows emotional amplification in **both** directions — not simply ne
 
 **What did NOT go well:**
 
-* SVM produced near-random results (AUC 0.635) due to Orange's **default RBF kernel** — wrong for sparse TF-IDF data. A **linear kernel** is required for text classification. This is a one-setting fix.
-* Noise tokens (`ha`, `wa`, `u`) survived preprocessing — a custom stopword list was needed
+* SVM produced near-random results (AUC 0.635) due to Orange's **default RBF kernel** - wrong for sparse TF-IDF data. A **linear kernel** is required for text classification. This is a one-setting fix.
+* Noise tokens (`ha`, `wa`, `u`) survived preprocessing - a custom stopword list was needed
 * Full-article VADER averaging compressed sentiment variance, making Box Plot visualizations flatter than expected
 
 **What I'd do differently:**
@@ -192,7 +192,7 @@ Fake news shows emotional amplification in **both** directions — not simply ne
 
 |File|Description|
 |-|-|
-|[`docs/project\_report.docx`](https://github.com/PhilipKatema/Fake_News_Detection/blob/main/docs/workflow_guide.docx)|Full academic report — all findings, methodology, and lessons learned|
+|[`docs/project\_report.docx`](https://github.com/PhilipKatema/Fake_News_Detection/blob/main/docs/workflow_guide.docx)|Full academic report - all findings, methodology, and lessons learned|
 |[`docs/workflow\_guide.docx`]([docs/workflow_guide.docx](https://github.com/PhilipKatema/Fake_News_Detection/blob/main/docs/workflow_guide.docx))|Step-by-step Orange 3.39 node configuration guide (fully replicable)|
 
 \---
